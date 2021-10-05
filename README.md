@@ -27,8 +27,8 @@ Comandos a serem executados no terminal:
 
  - Instalar os pacotes utilizados execute: npm install e/ou npm i
   
- - Instalar Angular CLI : npm install -g @angular/cli     ref https://angular.io/cli
- - Start Project : ng serve
+ - Instalar Angular CLI:@ npm install -g @angular/cli     ref https://angular.io/cli
+ - Start Project:@ ng serve
  
  *******************************************************************
  
@@ -36,12 +36,12 @@ Comandos a serem executados no terminal:
   
   - Pacote: apiDevelopersGazin
         
-        @Json-Serve
+        Json-Serve
 
 Comandos a serem executados no terminal:
 
- - Instalar os pacotes utilizados execute: npm install e/ou npm i
- - Start Project : json-serve developers.js
+ - Instalar os pacotes utilizados execute:@ npm install e/ou npm i
+ - Start Project:@ json-serve developers.js
  
 ********************************************************************
 
