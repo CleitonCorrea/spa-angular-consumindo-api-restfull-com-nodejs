@@ -21,7 +21,7 @@ Sugestão: Iniciar a aplicação com a API Json Serve para verificar a execuçã
 
 Instruções de Uso:
 
-#Inicializando o Front - Pacote developerGazin
+#Inicializando o Front - Pacote RAR developerGazin
 
 Comandos a serem executados no terminal:
 
