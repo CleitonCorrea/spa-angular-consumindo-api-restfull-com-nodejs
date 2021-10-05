@@ -14,20 +14,35 @@ http://localhost/developers/
 
 Pre-requisitos:
 
-Instalação do Node.JS
-Intalação do MongoDB
+Instalação Node.JS: https://nodejs.org/pt-br/download/package-manager/
+Intalação do MongoDB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 
-Instruções de Uso
+Instruções de Uso:
 
-FRONTEND
-Para startar o front end....... basta baixar o pacote developerGazin
-executar npm i para instalar o os pacotes necessarios e executar o comando ng serve
+#Inicializando o Front - Pacote desafioGazin
 
-API JSON SERVE
+Comandos a serem executados no terminal:
 
-API com NODE, EXPRESS E MONGODB
+ - Instalar os pacotes utilizados execute: npm install e/ou npm i
+  
+ - Instalar Angular CLI : npm install -g @angular/cli     ref https://angular.io/cli
+ - Start Project : ng serve
+ 
+ *******************************************************************
+ 
+ #Inicializando a API Json Serve
+ 
+  - Pacote: apiDevelopersGazin
 
- - Para utilizar a api com Json Server (apiDeveloperGazin) basta executar npm i logo apos execurtar o comando json-server developers.js
- - Para utilizar a api com Node (APINodeExpress)
+Comandos a serem executados no terminal:
+
+ - Instalar os pacotes utilizados execute: npm install e/ou npm i
+ - Start Project : json-serve developers.js
+ 
+  
+ 
+
+
+
 
 
