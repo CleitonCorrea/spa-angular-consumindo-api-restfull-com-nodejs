@@ -1,0 +1,19 @@
+{
+    "name": "api-node-express-mongo",
+    "version": "1.0.0",
+    "description": "Api criado para teste da empresa Gazin",
+    "main": "index.js",
+    "scripts": {
+        "devStart": "nodemon server.js"
+    },
+    "author": "Cleiton Rodrigo Correa",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.4",
+        "mongoose": "^5.5.7"
+    },
+    "devDependencies": {
+        "dotenv": "^8.0.0",
+        "nodemon": "^1.19.0"
+    }
+}
