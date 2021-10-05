@@ -1,0 +1,69 @@
+<div class="col-md-12">
+    <h2>Cadastar Desenvolvedor</h2>
+    <form class="">
+
+        <div class="form-group col-md-6" style="float: left;">
+            <label for="nome">Nome</label>
+            <input [(ngModel)]="developer.nome" required type="text" class="form-control form-control-sm" id="nome" aria-describedby="nomelHelp" name="nome">
+            <small id="nomeHelp" class="form-text text-muted">Campo nome é obrigatório.</small>
+        </div>
+
+        <div class="form-group col-md-6" style="float: left;">
+            <label for="sexo">Sexo</label>
+            <input [(ngModel)]="developer.sexo" type="text" class="form-control form-control-sm" id="sexo" aria-describedby="sexoHelp" name="sexo">
+            <small id="sexoHelp" class="form-text text-muted">Campo sexo é obrigatório.</small>
+        </div>
+
+        <div class="form-group col-md-6" style="float: left;">
+            <label for="idade">Idade</label>
+            <input [(ngModel)]="developer.idade" type="text" class="form-control form-control-sm" id="idade" aria-describedby="idadeHelp" name="idade">
+            <small id="idadeHelp" class="form-text text-muted">Campo idade é obrigatório.</small>
+        </div>
+
+        <div class="form-group col-md-6" style="float: left;">
+            <label for="hobby">Hobby</label>
+            <input [(ngModel)]="developer.hobby" type="text" class="form-control form-control-sm" id="hobby" aria-describedby="hobbyHelp" name="hobby">
+            <small id="hobbyHelp" class="form-text text-muted">Campo hobby é obrigatório.</small>
+        </div>
+
+        <div class="form-group col-md-6" style="float: left;">
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input [(ngModel)]="developer.dataNascimento" type="date" class="form-control form-control-sm" id="dataNascimento" aria-describedby="dataNascimentoHelp" name="dataNascimento">
+            <small id="dataNascimentoHelp" class="form-text text-muted">Campo data de nascimento é obrigatório.</small>
+        </div>
+        <div class="form-group col-md-6" style="float: left;"><br />
+            <button type="button" (click)="createDeveloper()" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </form>
+</div>
+<br />
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Hobby</th>
+            <th scope="col">Data Nascimento</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let dev of developers'>
+            <th scope="row">{{dev.id}}</th>
+            <td>{{dev.nome}}</td>
+            <td>{{dev.sexo}}</td>
+            <td>{{dev.idade}}</td>
+            <td>{{dev.hobby}}</td>
+            <td>{{dev.data_nascimento}}</td>
+            <td>
+                <div>
+                    <button type="button" (click)="updateDeveloper(dev.id)" class="btn btn-warning">Atualizar</button>
+
+                    <button type="button" (click)="removeDeveloper(dev.id)" class="btn btn-danger">remover</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
